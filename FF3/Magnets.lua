@@ -1,5 +1,3 @@
--- game place: https://www.roblox.com/games/82866880824588/Football-Fusion-3
-
 local services = setmetatable({}, {
     __index = function(self, key)
         local service = pcall(cloneref, game:FindService(key)) and cloneref(game:GetService(key)) or Instance.new(key)
@@ -24,9 +22,9 @@ local practice_id = game.PlaceId == 81310542478972
 local flags = {
     mags = false,
     radius = 20, -- // 20 is max because of the distance checks.
-}
+};
 
-local conns = {}
+local conns = {};
 
 local setupplayer, get_root, fireti; do
     setupplayer = function(plr)
@@ -80,4 +78,4 @@ conns.magnets = rservice.PostSimulation:Connect(function()
     end
 end)
 
-setupplayer(client)
+setupplayer(client);
