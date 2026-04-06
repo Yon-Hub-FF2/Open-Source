@@ -29,4 +29,4 @@ playergui.Visual.Shooting:GetPropertyChangedSignal("Visible"):Connect(function()
     rstorage.Packages.Knit.Services.ControlService.RE.Shoot:FireServer(100)
 end)
 
-setupplayer(client)
+setupplayer(client);
