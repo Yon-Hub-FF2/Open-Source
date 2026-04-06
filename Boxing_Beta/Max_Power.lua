@@ -10,7 +10,7 @@ local services = setmetatable({}, {
 local players = services.Players
 local rservice = services.RunService
 
-local conns = {}
+local conns = {};
 
 local client = players.LocalPlayer
 local character = client.Character
@@ -33,4 +33,4 @@ conns.max_power = rservice:BindToRenderStep("Max_Power", 1, function()
     punch_meter.Value = 1
 end)
 
-setupplayer(client)
+setupplayer(client);
