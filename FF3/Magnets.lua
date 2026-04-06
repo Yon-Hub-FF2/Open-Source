@@ -73,7 +73,8 @@ conns.magnets = rservice.PostSimulation:Connect(function()
             local distance = (hrp.Position - v.Position).Magnitude
 
             if distance < flags.radius then
-                fireti(hrp, v)
+                fireti(catchl, v)
+                fireti(catchr, v)
             end
         end
     end
